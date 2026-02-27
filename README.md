@@ -55,4 +55,9 @@ Unfortunately, this does not create a `node_modules` folder in `functions/log-ev
 
 ### Notes
 
-- The mere presence of a `pnpn-workspace.yaml` file seems to screw up hydration. If you revert back to this [commit](https://github.com/macdonst/pnpm-test/commit/9dd2ed821d6b55f33fa63d0742f97e273333fc0d) everything works pretty damn good.
+- The mere presence of a `pnpm-workspace.yaml` file seems to screw up hydration. If you revert back to this [commit](https://github.com/macdonst/pnpm-test/commit/9dd2ed821d6b55f33fa63d0742f97e273333fc0d) everything works pretty damn good.
+
+### Unworkable solutions
+
+1. You can't just copy the `node_modules` from `functions/log-event` to `functions/log-event/.build/function-log-event` as `pnpm` uses symlinking.
+2. Copying the `pnpm-lock.yaml` file to `functions/log-event/.build/function-log-event` before running hydrate doesn't help either.
