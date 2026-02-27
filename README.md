@@ -52,3 +52,7 @@ However, hydration still fails. Setting `CI=true` will remove the `functions/log
 ```
 
 Unfortunately, this does not create a `node_modules` folder in `functions/log-event/.build/function-log-event` which is where we need it to be as that is where we need it to be when we deploy the function code.
+
+### Notes
+
+- The mere presence of a `pnpn-workspace.yaml` file seems to screw up hydration. If you revert back to this [commit](https://github.com/macdonst/pnpm-test/commit/9dd2ed821d6b55f33fa63d0742f97e273333fc0d) everything works pretty damn good.
