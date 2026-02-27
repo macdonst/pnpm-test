@@ -1,7 +1,7 @@
 {
   "type": "module",
   "dependencies": {
-    "@sanity/functions": "^1.2.0"
+    "@sanity/functions": "catalog:"
   },
   "devDependencies": {
     "@sanity/blueprints": "0.12.2"

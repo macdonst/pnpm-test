@@ -1,2 +1,5 @@
 packages:
   - functions/*
+
+catalog:
+  '@sanity/functions': ^1.2.0
