@@ -16,6 +16,12 @@ importers:
         specifier: 0.12.2
         version: 0.12.2
 
+  functions/log-event:
+    dependencies:
+      '@sanity/functions':
+        specifier: ^1.2.0
+        version: 1.2.0
+
 packages:
 
   '@sanity/blueprints@0.12.2':
